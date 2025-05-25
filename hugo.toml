@@ -68,3 +68,7 @@ instagram = "https://instagram.com/rajabkabeer"
     name = "Kontakt"
     url = "/de/contact/"
     weight = 4
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
