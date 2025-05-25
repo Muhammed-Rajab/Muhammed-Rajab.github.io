@@ -55,7 +55,7 @@ instagram = "https://instagram.com/rajabkabeer"
 [languages.de.menu]
   [[languages.de.menu.main]]
     name = "Blog"  # German typically uses singular
-    url = "/de/blog/"
+    url = "/blog/"
     weight = 1
   [[languages.de.menu.main]]
     name = "Projekte"
