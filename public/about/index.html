@@ -3,7 +3,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tags - Rajab Kabeer | Portfolio</title>
+        <title>About Me - Rajab Kabeer | Portfolio</title>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
@@ -185,9 +185,11 @@
                 
                 <a href="http://localhost:1313/projects/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Projects</a>
                 
-                <a href="http://localhost:1313/about-me/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">About me</a>
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 text-accent-light dark:text-accent-dark font-semibold">About</a>
                 
                 <a href="http://localhost:1313/contact/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Contact</a>
+                
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 text-accent-light dark:text-accent-dark font-semibold">About Me</a>
                 
             </nav>
             <div class="hidden md:flex justify-end items-center">
@@ -217,10 +219,8 @@
                             
                             
                             
-                                
                             
-                            
-                            <a href="http://localhost:1313/de/tags/" 
+                            <a href="http://localhost:1313/de" 
                                class=" text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                 Deutsch
                             </a>
@@ -267,10 +267,8 @@
                                 
                                 
                                 
-                                    
                                 
-                                
-                                <a href="http://localhost:1313/de/tags/" 
+                                <a href="http://localhost:1313/de" 
                                    class=" text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                     Deutsch
                                 </a>
@@ -298,9 +296,11 @@
                 
                 <a href="http://localhost:1313/projects/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Projects</a>
                 
-                <a href="http://localhost:1313/about-me/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>About me</a>
+                <a href="http://localhost:1313/about/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 text-accent-light dark:text-accent-dark font-semibold" data-menu-link>About</a>
                 
                 <a href="http://localhost:1313/contact/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Contact</a>
+                
+                <a href="http://localhost:1313/about/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 text-accent-light dark:text-accent-dark font-semibold" data-menu-link>About Me</a>
                 
             </nav>
             <div class="mt-auto p-6">
@@ -443,12 +443,66 @@
 
         <main>
             
-<div class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-8">Tags</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-6 text-text-primary-light dark:text-text-primary-dark">About Me</h1>
+    <div class="flex flex-col gap-8">
+        <div class="flex-grow">
+            <div class="bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg mb-8 border border-border-primary-light dark:border-border-primary-dark">
+                <div class="prose prose-invert prose-xl max-w-none">
+                    <div>
+                        <p>This is soo cringe</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+    .prose {
+        color: #4b5563;  
+        font-size: 1.125rem;
+    }
+    html.dark .prose {
+        color: #9ca3af;  
+    }
+    .prose p {
+        color: #4b5563;  
+        margin-bottom: 1.5rem;  
+        line-height: 1.9;
+    }
+    html.dark .prose p {
+        color: #9ca3af;  
+    }
+    .prose p + p {
+        margin-top: 2rem;
+    }
+
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #0284c7;  
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+    html.dark .animated-link::after {
+        background-color: #0ea5e9;  
+    }
+</style>
 
         </main>
         

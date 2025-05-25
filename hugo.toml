@@ -22,14 +22,6 @@ github_username = "Muhammed-Rajab"
 email = ""
 instagram = "https://instagram.com/rajabkabeer"
 
-[menu]
-  [[menu.main]]
-    name = "Blogs"
-    url = "/blog"
-    weight = 1
-
-
-
 [languages]
   [languages.en]
     languageName = "English"
@@ -40,3 +32,39 @@ instagram = "https://instagram.com/rajabkabeer"
     languageName = "Deutsch"
     weight = 2
     contentDir = "content/de"
+
+[menu]
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "About me"
+    url = "/about-me/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[languages.de.menu]
+  [[languages.de.menu.main]]
+    name = "Blog"  # German typically uses singular
+    url = "/de/blog/"
+    weight = 1
+  [[languages.de.menu.main]]
+    name = "Projekte"
+    url = "/de/projects/"
+    weight = 2
+  [[languages.de.menu.main]]
+    name = "Über mich"
+    url = "/de/about/"
+    weight = 3
+  [[languages.de.menu.main]]
+    name = "Kontakt"
+    url = "/de/contact/"
+    weight = 4
