@@ -3,7 +3,7 @@
   description = "A full CHIP-8 emulator suite with an assembler, disassembler, and a Raylib-powered visual debugger. Built to dive deep into low-level architecture, opcode decoding, and system emulation."
   link = "/hi"
   github = "https://github.com/Muhammed-Rajab/chip8.cpp"
-  techs = ["C++", "Raylib"]
+  tech = "C++,Raylib"
   image = "/images/chip8.jpg"
 
 [[projects]]
@@ -11,5 +11,5 @@
   description = "A gym management dashboard built for a real-world client. Tracks member data, due fees, and check-ins. Designed to streamline gym operations with a simple, intuitive interface."
   link = ""  # Add a blog/demo link if you make one
   github = ""  # Optional, if it's private or client-owned
-  technologies = ["Node.js", "Express", "MongoDB", "EJS"]
+  tech = "Node.js,Express,MongoDB,EJS"
   image = "/images/ironage.jpg"
