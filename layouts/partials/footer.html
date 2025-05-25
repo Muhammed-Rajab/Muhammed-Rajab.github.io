@@ -1,0 +1,38 @@
+<!-- Footer -->
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-border-primary-light dark:border-border-primary-dark pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">
+                {{ $authorData := index site.Data .Language.Lang "author" }}                
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm ">© {{ now.Format "2006" }} {{ $authorData.name }}</p>
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm pb-12">Made with time, thought, and a bit of soul.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #0284c7; /* accent-light (sky-600) */
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+    html.dark .animated-link::after {
+        background-color: #0ea5e9; /* accent-dark (sky-500) */
+    }
+</style> 
