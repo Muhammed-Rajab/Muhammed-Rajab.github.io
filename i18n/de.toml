@@ -1,0 +1,60 @@
+[whatIWorkWith]
+other = "Meine Werkzeuge"
+
+[experienceTitle]
+other = "Berufserfahrung"
+
+[projectsTitle]
+other = "Projekte"
+
+[blogsTitle]
+other = "Blog"
+
+[viewAll]
+other = "Alle anzeigen"
+
+[localTimeLabel]
+other = "Ortszeit:"
+
+[menuTitle]
+other = "Menü"
+
+[learnMore]
+other = "Mehr erfahren"
+
+[builtUsing]
+other = "Erstellt mit"
+
+[takeALookAtMy]
+other = "Schauen Sie sich meine"
+
+# Additional common terms you might need:
+[contactTitle]
+other = "Kontakt"
+
+[aboutTitle]
+other = "Über mich"
+
+[skillsTitle]
+other = "Fähigkeiten"
+
+[educationTitle]
+other = "Ausbildung"
+
+[readMore]
+other = "Weiterlesen"
+
+[downloadCV]
+other = "Lebenslauf herunterladen"
+
+[seeLive]
+other = "Live ansehen"
+
+[viewCode]
+other = "Code ansehen"
+
+[previous]
+other = "Zurück"
+
+[next]
+other = "Weiter"
