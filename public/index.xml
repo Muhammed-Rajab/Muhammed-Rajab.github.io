@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rajab Kabeer | Portfolio</title>
-    <link>http://localhost:44855/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Rajab Kabeer | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:44855/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Blog Post</title>
-      <link>http://localhost:44855/blog/first-post/</link>
+      <link>http://localhost:1313/blog/first-post/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44855/blog/first-post/</guid>
+      <guid>http://localhost:1313/blog/first-post/</guid>
       <description>&lt;p&gt;This is my first blog post content&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:44855/en/about/</link>
+      <link>http://localhost:1313/en/about/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44855/en/about/</guid>
+      <guid>http://localhost:1313/en/about/</guid>
       <description>&lt;p&gt;This is my about page content.&lt;/p&gt;</description>
     </item>
   </channel>
