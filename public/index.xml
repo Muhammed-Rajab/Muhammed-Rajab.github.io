@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rajab Kabeer | Portfolio</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:44855/</link>
     <description>Recent content on Rajab Kabeer | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Mar 2023 10:30:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44855/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/en/projects/</link>
+      <link>http://localhost:44855/en/projects/</link>
       <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
-      <guid>http://localhost:1313/en/projects/</guid>
+      <guid>http://localhost:44855/en/projects/</guid>
       <description></description>
     </item>
   </channel>

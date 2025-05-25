@@ -23,13 +23,8 @@ email = ""
 instagram = "https://instagram.com/rajabkabeer"
 
 [menu]
-
   [[menu.main]]
     name = "Blogs"
     url = "/blog"
     weight = 1
 
-  [[menu.main]]
-    name = "Blogs"
-    url = "/blog"
-    weight = 1
