@@ -1,11 +1,5 @@
 [[experience]]
-  role = "Web Developer"
-  company = "Tech Company Inc."
-  company_link = "https://techcompany.com"
-  period = "Jan 2020 - Present"
-  country = "USA"
-  responsibilities = [
-    "Developed company website",
-    "Maintained backend systems"
-  ]
-  technologies = ["JavaScript", "React", "Node.js"]
+  role = "Freelancer"
+  period = "Jan 2023 - Present"
+  country = "India"
+  description = "Developed a gym management dashboard for a client, including features for fee tracking, member management, and real-time insights."
