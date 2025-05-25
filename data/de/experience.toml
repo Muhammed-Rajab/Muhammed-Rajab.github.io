@@ -1,5 +1,7 @@
 [[experience]]
-  role = "Freelancer"
-  period = "Jan 2023 - Present"
-  country = "India"
-  description = "Developed a gym management dashboard for a client, including features for fee tracking, member management, and real-time insights."
+  role = "Freiberufler"
+  period = "Jan. 2023 – Heute"
+  country = "Indien"
+  description = """
+    Entwicklung eines Fitnessstudio-Verwaltungssystems mit Automatisierter Gebührenverfolgung, Mitgliederverwaltung und Echtzeit-Analysen.
+  """
