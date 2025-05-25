@@ -1,0 +1,201 @@
+baseURL = "https://johndoe.dev"
+languageCode = 'en-us'
+title = 'Rajab Kabeer | Portfolio'
+theme = 'hugo-noir'
+
+# URL handling
+relativeURLs = true
+canonifyURLs = true
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+name = "Rajab Kabeer"
+location = "Kerala, India"
+description = "some description kinda thing"
+profile_image = "/images/profile.jpg"
+github = "https://github.com/Muhammed-Rajab"
+github_username = "Muhammed-Rajab"
+email = ""
+instagram = "https://instagram.com/rajabkabeer"
+
+[[params.projects]]
+title = "Project Consectetur"
+description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+tech = "Python, TensorFlow, Docker, Redis"
+image = "/images/projects/consectetur.png"
+link = "https://github.com/loremipsum/consectetur"
+
+[[params.projects]]
+title = "Adipiscing Platform"
+description = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+tech = "React, Node.js, MongoDB, AWS"
+image = "/images/projects/adipiscing.png"
+link = "https://github.com/loremipsum/adipiscing"
+
+[[params.projects]]
+title = "Tempor Analytics"
+description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
+tech = "Python, FastAPI, PostgreSQL, Docker"
+image = "/images/projects/tempor.png"
+link = "https://github.com/loremipsum/tempor"
+
+[[params.projects]]
+title = "Eiusmod Framework"
+description = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+tech = "Python, PyTorch, MLflow, Kubernetes"
+image = "/images/projects/eiusmod.png"
+link = "https://github.com/loremipsum/eiusmod"
+
+[[params.projects]]
+title = "Incididunt Engine"
+description = "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+tech = "Python, Scikit-learn, Flask, Redis"
+image = "/images/projects/incididunt.png"
+link = "https://github.com/loremipsum/incididunt"
+
+[[params.projects]]
+title = "Labore System"
+description = "Et harum quidem rerum facilis est et expedita distinctio nam libero tempore."
+tech = "JavaScript, Express, MongoDB, Docker"
+image = "/images/projects/labore.jpg"
+link = "https://github.com/loremipsum/labore"
+
+[[params.projects]]
+title = "Dolore Platform"
+description = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe."
+tech = "Python, Django, PostgreSQL, Celery"
+image = "/images/projects/dolore.png"
+link = "https://github.com/loremipsum/dolore"
+
+[[params.projects]]
+title = "Magna Analytics"
+description = "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus."
+tech = "Python, Pandas, Streamlit, AWS"
+image = "/images/projects/magna.png"
+link = "https://github.com/loremipsum/magna"
+
+[[params.projects]]
+title = "Aliqua Framework"
+description = "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae."
+tech = "TypeScript, React, GraphQL, Docker"
+image = "/images/projects/aliqua.jpg"
+link = "https://github.com/loremipsum/aliqua"
+
+[[params.projects]]
+title = "Excepteur System"
+description = "Nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit."
+tech = "Python, FastAPI, Redis, Kubernetes"
+image = "/images/projects/excepteur.jpg"
+link = "https://github.com/loremipsum/excepteur"
+
+[[params.blogs]]
+title = "Lorem Ipsum Systems"
+date = "2025-03-15"
+summary = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+tags = ["Lorem", "Ipsum", "Dolor"]
+content = """
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
+"""
+link = "https://medium.com/@loremipsum/lorem-systems"
+
+[[params.blogs]]
+title = "The Future of Dolor"
+date = "2025-02-28"
+summary = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+tags = ["Sit", "Amet", "Consectetur"]
+content = """
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
+"""
+link = "https://medium.com/@loremipsum/future-dolor"
+
+[[params.blogs]]
+title = "Adipiscing: A Practical Guide"
+date = "2025-02-10"
+summary = "Nam libero tempore, cum soluta nobis est eligendi optio."
+tags = ["Elit", "Tempor", "Guide"]
+content = """
+Et harum quidem rerum facilis est et expedita distinctio...
+"""
+link = "https://medium.com/@loremipsum/adipiscing-guide"
+
+[[params.blogs]]
+title = "Optimizing Incididunt"
+date = "2025-01-20"
+summary = "Temporibus autem quibusdam et aut officiis debitis."
+tags = ["Labore", "Dolore", "Magna"]
+content = """
+Itaque earum rerum hic tenetur a sapiente delectus...
+"""
+link = "https://medium.com/@loremipsum/optimizing-incididunt"
+
+[[params.blogs]]
+title = "Aliqua: A Comprehensive Guide"
+date = "2024-12-15"
+summary = "Quis autem vel eum iure reprehenderit qui in ea voluptate."
+tags = ["Ut", "Enim", "Minim"]
+content = """
+Nisi ut aliquid ex ea commodi consequatur quis autem...
+"""
+link = "https://medium.com/@loremipsum/aliqua-guide"
+
+[[params.blogs]]
+title = "Veniam in Practice"
+date = "2024-11-20"
+summary = "Duis aute irure dolor in reprehenderit in voluptate velit."
+tags = ["Esse", "Cillum", "Dolore"]
+content = """
+Excepteur sint occaecat cupidatat non proident...
+"""
+link = "https://medium.com/@loremipsum/veniam-practice"
+
+[[params.blogs]]
+title = "Fugiat for Systems"
+date = "2024-10-25"
+summary = "Sunt in culpa qui officia deserunt mollit anim id est laborum."
+tags = ["Nulla", "Pariatur", "Systems"]
+content = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+"""
+link = "https://medium.com/@loremipsum/fugiat-systems"
+
+[[params.blogs]]
+title = "Best Practices in Consectetur"
+date = "2024-09-30"
+summary = "Sed do eiusmod tempor incididunt ut labore et dolore magna."
+tags = ["Best", "Practices", "Guide"]
+content = """
+Ut enim ad minim veniam, quis nostrud exercitation...
+"""
+link = "https://medium.com/@loremipsum/consectetur-practices"
+
+[[params.voluntary]]
+role = "Community Lead"
+organization = "Lorem Foundation"
+period = "2020 - Present"
+description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blogs/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact/"
+    weight = 5

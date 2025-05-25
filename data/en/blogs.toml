@@ -1,0 +1,13 @@
+[[blogs]]
+title = "Sample Blog Post 1"
+date = "2025-05-01"
+description = "This is a sample blog post description"
+url = "/blog/sample-post-1"
+tags = ["sample", "hugo"]
+
+[[blogs]]
+title = "Sample Blog Post 2"
+date = "2025-05-15"
+description = "Another sample blog post description"
+url = "/blog/sample-post-2"
+tags = ["demo", "website"]

@@ -1,0 +1,15 @@
+[[projects]]
+  title = "My First Project"
+  description = "A brief description of my first project"
+  link = "https://example.com/project1"
+  github = "https://github.com/yourusername/project1"
+  technologies = ["HTML", "CSS", "JavaScript"]
+  image = "/images/project1.jpg"
+
+[[projects]]
+  title = "My Second Project"
+  description = "A brief description of my second project"
+  link = "https://example.com/project2"
+  github = "https://github.com/yourusername/project2"
+  technologies = ["React", "Node.js"]
+  image = "/images/project2.jpg"
