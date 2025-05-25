@@ -38,3 +38,14 @@ instagram = "https://instagram.com/rajabkabeer"
     languageName = "Deutsch"
     weight = 2
     contentDir = "content/de"
+
+[languages.de.menu]
+  [[languages.de.menu.main]]
+    name = "Blogs"
+    url = "/blog"
+    weight = 1
+
+  [[languages.de.menu.main]]
+    name = "Projekte"
+    url = "/projects"
+    weight = 2
