@@ -1,114 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tags - Rajab Kabeer | Portfolio</title>
-        
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="http://localhost:1313/favicon_io/site.webmanifest">        
-        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">            
-        <style>
-            html, body {
-                background-color: #FFFFFF; 
-                color: #1f2937; 
-            }
-            html.dark, html.dark body {
-                background-color: #121212; 
-                color: #f3f4f6; 
-            }
-            .border { 
-                border-color: #d4d4d8; 
-            }
-            html.dark .border {
-                border-color: #374151; 
-            }
-            .carousel-item {
-                display: inline-block;
-                margin: 0 1rem;
-            }            
-            .flex {
-                display: flex;
-            }
-            .flex-col {
-                flex-direction: column;
-            }
-            
-            @media (min-width: 768px) {
-                .md\:flex-row {
-                    flex-direction: row;
-                }
-            }
-            
-            .tech-carousel {
-                overflow: hidden;
-                width: 100%;
-                padding: 1rem 0;
-            }
-            
-            .carousel-track {
-                white-space: nowrap;
-            }
-        </style>
-        
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <script>
-            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
-        </script>
-        <style>
-            :root {
-                color-scheme: light dark;
-            }
-            
-            .tech-icon {
-                filter: grayscale(100%) brightness(200%);
-                transition: all 0.3s ease;
-            }
-            .tech-icon:hover {
-                filter: none;
-            }
-            
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-            
-            .tech-carousel {
-                width: 100%;
-                padding: 1rem 0;
-            }
-            
-            .tech-track {
-                width: fit-content;
-                animation: scroll 20s linear infinite;
-            }
-            
-            .tech-track:hover {
-                animation-play-state: paused;
-            }
-            
-            .tech-slide {
-                float: left;
-            }
-        </style>
-    </head>
-    <body class="min-h-screen bg-bg-primary-light dark:bg-bg-primary-dark text-text-primary-light dark:text-text-primary-dark">
-        
+{{ $currentPage := . }}
 <head>
-    
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0RTF18BT4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -168,63 +60,48 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex justify-between items-center">
-                <a href="http://localhost:1313/de/" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
-                    Rajab Kabeer
+                <a href="{{ .Site.Home.Permalink }}" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
+                    {{ site.Params.name }}
                 </a>
-                
+                <!-- Hamburger menu button for mobile -->
                 <button id="mobile-menu-button" class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>            
-            
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                
-                <a href="http://localhost:1313/de/blog/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Blog</a>
-                
-                <a href="http://localhost:1313/de/projects/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Projekte</a>
-                
-                <a href="http://localhost:1313/de/about-me/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Über mich</a>
-                
-                <a href="http://localhost:1313/de/contact/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Kontakt</a>
-                
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL | absURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">{{ .Name }}</a>
+                {{ end }}
             </nav>
             <div class="hidden md:flex justify-end items-center">
                 <div class="flex items-center">
-                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Ortszeit:</span>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">{{ T "localTimeLabel" }}</span>
                     <div id="local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
-                
+                <!-- Language Switcher - Desktop -->
                 <div class="language-switcher ml-4">
                     <div class="language-switcher-btn text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
-                        DE
+                        {{ if eq .Language.Lang "en" }}EN{{ else if eq .Language.Lang "de" }}DE{{ else if eq .Language.Lang "fr" }}FR{{ end }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="m6 9 6 6 6-6"/>
                         </svg>
                     </div>
                     <div class="language-dropdown">
-                        
-                            
-                            
-                            
-                                
-                            
-                            
-                            <a href="http://localhost:1313/tags/" 
-                               class=" text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                English
+                        {{ range .Site.Languages }}
+                            {{ $translation := "" }}
+                            {{ $foundTranslations := where $.Page.Translations "Lang" .Lang }}
+                            {{ if $foundTranslations }}
+                                {{ $translation = index $foundTranslations 0 }}
+                            {{ end }}
+                            {{ $isCurrentLang := eq .Lang $.Language.Lang }}
+                            <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                               class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                                {{ .LanguageName }}
                             </a>
-                        
-                            
-                            
-                            
-                            
-                            <a href="http://localhost:1313/de" 
-                               class="language-active text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                Deutsch
-                            </a>
-                        
+                        {{ end }}
                     </div>
                 </div>
                 <button id="theme-toggle-button-desktop" class="ml-4 inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
@@ -239,42 +116,33 @@
         </div>
     </div>
 
-    
+    <!-- Mobile Navigation Overlay -->
     <div id="mobile-menu" class="fixed inset-0 bg-bg-secondary-light dark:bg-bg-secondary-dark z-50 hidden transition-all duration-300 backdrop-blur-2xl">
         <div class="flex flex-col h-full">
             <div class="flex justify-between items-center p-6">
-                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">Menü</span>
+                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">{{ T "menuTitle" }}</span>
                 <div class="flex items-center gap-4">
-                    
+                    <!-- Language Switcher - Mobile -->
                     <div class="language-switcher">
                         <div class="language-switcher-btn text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 flex items-center p-2 rounded-md">
-                            
+                            {{ if eq .Language.Lang "en" }}EN{{ else if eq .Language.Lang "es" }}ES{{ else if eq .Language.Lang "fr" }}FR{{ end }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m6 9 6 6 6-6"/>
                             </svg>
                         </div>
                         <div class="language-dropdown">
-                            
-                                
-                                
-                                
-                                    
-                                
-                                
-                                <a href="http://localhost:1313/tags/" 
-                                   class=" text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                    English
+                            {{ range .Site.Languages }}
+                                {{ $translation := "" }}
+                                {{ $foundTranslationsMobile := where $.Page.Translations "Lang" .Lang }}
+                                {{ if $foundTranslationsMobile }}
+                                    {{ $translation = index $foundTranslationsMobile 0 }}
+                                {{ end }}
+                                {{ $isCurrentLang := eq .Lang $.Language.Lang }}
+                                <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                                   class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                                    {{ .LanguageName }}
                                 </a>
-                            
-                                
-                                
-                                
-                                
-                                <a href="http://localhost:1313/de" 
-                                   class="language-active text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                    Deutsch
-                                </a>
-                            
+                            {{ end }}
                         </div>
                     </div>
                     <button id="theme-toggle-button-mobile" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 flex items-center p-2 rounded-md">
@@ -293,19 +161,13 @@
                 </div>
             </div>
             <nav class="flex flex-col p-6 space-y-4">
-                
-                <a href="http://localhost:1313/de/blog/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Blog</a>
-                
-                <a href="http://localhost:1313/de/projects/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Projekte</a>
-                
-                <a href="http://localhost:1313/de/about-me/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Über mich</a>
-                
-                <a href="http://localhost:1313/de/contact/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Kontakt</a>
-                
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL | absURL }}" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}" data-menu-link>{{ .Name }}</a>
+                {{ end }}
             </nav>
             <div class="mt-auto p-6">
                 <div class="flex items-center justify-center">
-                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Ortszeit:</span>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">{{ T "localTimeLabel" }}</span>
                     <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
             </div>
@@ -314,7 +176,7 @@
 </header>
 
 <script>
-    
+    // Time display function
     function updateLocalTime() {
         const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
         timeElements.forEach(element => {
@@ -328,7 +190,7 @@
     updateLocalTime();
     setInterval(updateLocalTime, 1000);
 
-    
+    // Mobile menu functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -336,23 +198,23 @@
 
     function openMobileMenu() {
         mobileMenu.classList.remove('hidden');
-        document.body.style.overflow = 'hidden'; 
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
     }
 
     function closeMobileMenu() {
         mobileMenu.classList.add('hidden');
-        document.body.style.overflow = ''; 
+        document.body.style.overflow = ''; // Restore scrolling
     }
 
     mobileMenuButton.addEventListener('click', openMobileMenu);
     mobileMenuClose.addEventListener('click', closeMobileMenu);
 
-    
+    // Close menu when clicking on a link
     menuLinks.forEach(link => {
         link.addEventListener('click', closeMobileMenu);
     });
 
-    
+    // Theme toggle functionality
     const themeToggleBtnDesktop = document.getElementById('theme-toggle-button-desktop');
     const themeToggleDarkIconDesktop = document.getElementById('theme-toggle-dark-icon-desktop');
     const themeToggleLightIconDesktop = document.getElementById('theme-toggle-light-icon-desktop');
@@ -361,7 +223,7 @@
     const themeToggleDarkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
     const themeToggleLightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
 
-    
+    // Function to update icons based on theme
     function updateIcons(isDarkMode) {
         if (themeToggleDarkIconDesktop && themeToggleLightIconDesktop) {
             if (isDarkMode) {
@@ -383,7 +245,7 @@
         }
     }
 
-    
+    // Function to set the theme (dark or light)
     function applyTheme(isDarkMode) {
         if (isDarkMode) {
             document.documentElement.classList.add('dark');
@@ -395,24 +257,24 @@
         updateIcons(isDarkMode);
     }
 
-    
+    // Initialize theme based on localStorage or prefers-color-scheme
     let initialIsDarkMode = false;
     if (localStorage.getItem('color-theme') === 'dark' || 
         (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         initialIsDarkMode = true;
     }
-    
+    // Apply the initial theme. If it's dark, add the class to <html> immediately to prevent FOUC.
     if (initialIsDarkMode && !document.documentElement.classList.contains('dark')) {
          document.documentElement.classList.add('dark');
     }
-    applyTheme(initialIsDarkMode); 
+    applyTheme(initialIsDarkMode); // This will set localStorage, icons, and ensure class is correct.
 
-    
+    // Event listener for theme toggle buttons
     function themeToggleClickHandler() {
         const isCurrentlyDark = document.documentElement.classList.contains('dark');
-        applyTheme(!isCurrentlyDark); 
+        applyTheme(!isCurrentlyDark); // Toggle to the opposite theme
         
-        
+        // If toggling from mobile menu, close the menu
         if (window.innerWidth < 768) {
             closeMobileMenu();
         }
@@ -425,70 +287,18 @@
         themeToggleBtnMobile.addEventListener('click', themeToggleClickHandler);
     }
     
-    
+    // Add click event listener to the mobile menu background
     mobileMenu.addEventListener('click', function(event) {
-        
+        // Only close if clicking directly on the background (not on menu content)
         if (event.target === mobileMenu) {
             closeMobileMenu();
         }
     });
     
-    
+    // Handle escape key to close the menu
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
             closeMobileMenu();
         }
     });
 </script> 
-
-        <main>
-            
-<div class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-8">Tags</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-    </div>
-</div>
-
-        </main>
-        
-<footer class="mt-32 text-center">
-    <div class="max-w-3xl mx-auto">
-        <div class="border-t border-border-primary-light dark:border-border-primary-dark pt-5">
-            <div class="flex flex-col items-center justify-center gap-2">
-                                
-                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm ">© 2025 Rajab Kabeer</p>
-                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm pb-12">Made with time, thought, and a bit of soul.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<style>
-    .animated-link {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-    }
-    
-    .animated-link::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 1px;
-        bottom: -1px;
-        left: 0;
-        background-color: #0284c7;  
-        transition: width 0.3s ease-in-out;
-    }
-    
-    .animated-link:hover::after {
-        width: 100%;
-    }
-    html.dark .animated-link::after {
-        background-color: #0ea5e9;  
-    }
-</style> 
-
-    </body>
-</html> 

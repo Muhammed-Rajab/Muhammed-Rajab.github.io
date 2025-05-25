@@ -62,7 +62,7 @@ instagram = "https://instagram.com/rajabkabeer"
     weight = 2
   [[languages.de.menu.main]]
     name = "Über mich"
-    url = "/de/about/"
+    url = "/de/about-me/"
     weight = 3
   [[languages.de.menu.main]]
     name = "Kontakt"
