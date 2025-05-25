@@ -1,13 +1,29 @@
 [[blogs]]
-title = "Sample Blog Post 1"
-date = "2025-05-01"
-description = "This is a sample blog post description"
-url = "/blog/sample-post-1"
-tags = ["sample", "hugo"]
+title = "I built a CHIP-8 disassembler to read what I can't remember writing"
+date = "2025-05-25"
+summary = "Because reversing hex dumps into human words is strangely satisfying. Also, I got tired of guessing."
+url = "/blog/posts/disassembler-for-forgetting-fast/"
+tags = ["c++", "disassembler", "chip8", "dev-log"]
 
 [[blogs]]
-title = "Sample Blog Post 2"
-date = "2025-05-15"
-description = "Another sample blog post description"
-url = "/blog/sample-post-2"
-tags = ["demo", "website"]
+title = "I built a CHIP-8 assembler because hex codes hurt my soul"
+date = "2025-05-23"
+summary = "Turning human-readable instructions into machine gibberish—because typing opcodes by hand is a cry for help."
+url = "/blog/posts/assembler-for-the-8-bit-masochist/"
+tags = ["c++", "assembler", "chip8", "dev-log"]
+
+[[blogs]]
+title = "I built a CHIP-8 emulator because I have no life"
+date = "2025-05-21"
+summary = "A deep dive into opcodes, pixels, and pain. Also, fun. Sort of."
+url = "/blog/posts/chip8-because-i-have-no-life/"
+tags = ["c++", "emulator", "project", "dev-log"]
+
+[[blogs]]
+title = "I Miss The Good Ol' Telnet Days - So I Built My Own Server"
+date = "2025-05-07"
+summary = "Who doesn't love a little low-level fun with telnet?"
+url = "/blog/posts/i-miss-the-old-telnet-days-so-i-built-my-own-server/"
+tags = ["c++", "dev-log", "project"]
+
+

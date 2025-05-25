@@ -226,7 +226,7 @@
         </div>
         <div class="space-y-8 max-w-3xl mx-auto">
             {{ $blogsData := index site.Data .Language.Lang "blogs" }}
-            {{ range first 3 $blogsData.blogs }}
+            {{ range first 4 $blogsData.blogs }}
             <div class="group">
                 <p class="text-gray-400 text-sm mb-1">{{ .date }}</p>
                 <a href="{{ .link }}" class="block group" target="_blank">
