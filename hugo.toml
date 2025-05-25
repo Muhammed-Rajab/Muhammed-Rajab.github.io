@@ -1,4 +1,5 @@
 baseURL = "https://Muhammed-Rajab.github.io/"
+publishDir = "docs"
 languageCode = 'en-us'
 title = 'Rajab Kabeer | Portfolio'
 theme = 'hugo-noir'
