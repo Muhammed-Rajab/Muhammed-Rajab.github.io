@@ -16,18 +16,18 @@
       <description></description>
     </item>
     <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/de/about-me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/about-me/</guid>
-      <description>&lt;p&gt;This is soo cringe&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Kontakt</title>
       <link>http://localhost:1313/de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/de/contact/</guid>
       <description>&lt;p&gt;Willst du mich erreichen? Geil.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;E-Mail&lt;/strong&gt; – Wenn’s mal ernst wird oder du was Professionelles klären willst.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instagram&lt;/strong&gt; – Wenn du dir ein bisschen von meinem Kram anschauen willst (und vielleicht fürs Chaos bleibst – könnte dir gefallen).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Discord&lt;/strong&gt; – Falls du kein Insta hast oder lieber mit Memes kommunizierst.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt; – Wenn du meinen Code durchstöbern oder still über meine Commits urteilen willst. Gönn dir.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Such dir was aus – ich bin meistens irgendwo erreichbar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Über mich</title>
+      <link>http://localhost:1313/de/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/about-me/</guid>
+      <description>&lt;p&gt;Ah ja, die „Über mich“-Seite – wo ich versuche, interessant zu klingen, ohne so zu wirken, als würde ich’s krampfhaft versuchen.&lt;/p&gt;&#xA;&lt;p&gt;Ich bin Programmierer mit einer leichten Obsession für Elektronik, Musik und dem Drang, Dinge zu bauen, die eigentlich nicht funktionieren sollten, es aber trotzdem tun. Schreiben tu ich auch ab und zu – das meiste bleibt aber brav in meiner Notizen-App, wo’s niemanden nervt.&lt;/p&gt;&#xA;&lt;p&gt;Meine Projekte? Unvorhersehbar. Meine Pläne? Meistens einfach nur Vibes. Ich bau gern Sachen, die mich wirklich packen – so Sachen, die einen nachts wachhalten, weil da noch eine Idee im Kopf rumschwirrt.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
