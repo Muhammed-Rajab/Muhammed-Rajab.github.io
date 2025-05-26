@@ -1,33 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on Rajab Kabeer | Portfolio</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Rajab Kabeer | Portfolio</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 15 Mar 2023 10:30:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about-me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-me/</guid>
-      <description>&lt;p&gt;Ah yes, the “About Me” page — where I try to sound interesting without sounding like I’m trying to sound interesting.&lt;/p&gt;&#xA;&lt;p&gt;I’m a programmer with a borderline obsession for electronics, music, and building things that probably shouldn’t work but somehow do. I also write sometimes, but most of it lives quietly in my notes app, where it can’t bother anyone.&lt;/p&gt;&#xA;&lt;p&gt;My work? A bit unpredictable. My plans? Mostly vibes. I like making things that excite me — the kind that keep me up at night with just one more idea to try.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;Wanna get in touch? Cool.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt; – If you&amp;rsquo;re feeling professional or need something serious sorted.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instagram&lt;/strong&gt; – If you want to check out some of my work (and maybe stay for the chaos — you might like it).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Discord&lt;/strong&gt; – If, for some reason, you don’t have Instagram or just prefer memes with your messages.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt; – If you&amp;rsquo;re here to snoop around my code or silently judge my commit history. Go ahead&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Rajab Kabeer | Portfolio</title><link>https://Muhammed-Rajab.github.io/</link><description>Recent content in Home on Rajab Kabeer | Portfolio</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 15 Mar 2023 10:30:00 +0530</lastBuildDate><atom:link href="https://Muhammed-Rajab.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://Muhammed-Rajab.github.io/projects/</link><pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate><guid>https://Muhammed-Rajab.github.io/projects/</guid><description/></item><item><title>About Me</title><link>https://Muhammed-Rajab.github.io/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Muhammed-Rajab.github.io/about-me/</guid><description>&lt;p>Ah yes, the “About Me” page — where I try to sound interesting without sounding like I’m trying to sound interesting.&lt;/p>
+&lt;p>I’m a programmer with a borderline obsession for electronics, music, and building things that probably shouldn’t work but somehow do. I also write sometimes, but most of it lives quietly in my notes app, where it can’t bother anyone.&lt;/p>
+&lt;p>My work? A bit unpredictable. My plans? Mostly vibes. I like making things that excite me — the kind that keep me up at night with just one more idea to try.&lt;/p></description></item><item><title>Contact</title><link>https://Muhammed-Rajab.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Muhammed-Rajab.github.io/contact/</guid><description>&lt;p>Wanna get in touch? Cool.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Email&lt;/strong> – If you&amp;rsquo;re feeling professional or need something serious sorted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instagram&lt;/strong> – If you want to check out some of my work (and maybe stay for the chaos — you might like it).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Discord&lt;/strong> – If, for some reason, you don’t have Instagram or just prefer memes with your messages.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>GitHub&lt;/strong> – If you&amp;rsquo;re here to snoop around my code or silently judge my commit history. Go ahead&lt;/p></description></item></channel></rss>
