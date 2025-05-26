@@ -20,8 +20,10 @@ description = "some description kinda thing"
 profile_image = "/images/profile.jpg"
 github = "https://github.com/Muhammed-Rajab"
 github_username = "Muhammed-Rajab"
-email = ""
+email = "muhammedrajab101@gmail.com"
 instagram = "https://instagram.com/rajabkabeer"
+instagram_username = "rajabkabeer"
+discord = "agalma_"
 
 [languages]
   [languages.en]
