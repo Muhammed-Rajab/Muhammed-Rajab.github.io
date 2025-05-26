@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Rajab Kabeer | Portfolio</title><link>https://Muhammed-Rajab.github.io/</link><description>Recent content in Home on Rajab Kabeer | Portfolio</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 15 Mar 2023 10:30:00 +0530</lastBuildDate><atom:link href="https://Muhammed-Rajab.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://Muhammed-Rajab.github.io/projects/</link><pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate><guid>https://Muhammed-Rajab.github.io/projects/</guid><description/></item><item><title>About Me</title><link>https://Muhammed-Rajab.github.io/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Muhammed-Rajab.github.io/about-me/</guid><description>&lt;p>This is soo cringe&lt;/p></description></item><item><title>Contact</title><link>https://Muhammed-Rajab.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Muhammed-Rajab.github.io/contact/</guid><description>&lt;p>This is soo cringe&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Rajab Kabeer | Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Rajab Kabeer | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Mar 2023 10:30:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-me/</guid>
+      <description>&lt;p&gt;Ah yes, the “About Me” page — where I try to sound interesting without sounding like I’m trying to sound interesting.&lt;/p&gt;&#xA;&lt;p&gt;I’m a programmer with a borderline obsession for electronics, music, and building things that probably shouldn’t work but somehow do. I also write sometimes, but most of it lives quietly in my notes app, where it can’t bother anyone.&lt;/p&gt;&#xA;&lt;p&gt;My work? A bit unpredictable. My plans? Mostly vibes. I like making things that excite me — the kind that keep me up at night with just one more idea to try.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;This is soo cringe&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
