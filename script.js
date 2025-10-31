@@ -101,6 +101,14 @@ const InitializeProjectsSection = () => {
       new_project: true,
     },
     {
+      title: "shadespheare.lua",
+      desc: "like ShaderToy, but it actually LÖVES you back. made because I refuse to leave Neovim.",
+      tags: ["lua", "graphic", "cli"],
+      github: "https://github.com/Muhammed-Rajab/shadespheare.lua",
+      under_development: true,
+      new_project: true,
+    },
+    {
       title: "fretty mercury",
       desc: "A silly guitar fretboard visualizer written in Lua 🎸💖",
       tags: ["lua", "music", "cli"],
