@@ -79,6 +79,7 @@ const InitializeProjectsSection = () => {
    *  desc:               string,   // project description
    *  tags:               string[], // tags associated
    *  github:             string,   // github repo url
+   *  hidden:             boolean?,   // hide from ui
    *  under_development:  boolean?, // whether it's still under development  TODO: add gif
    *  new_project:        boolean?  // whether it's a new project (adds gif)
    * }
@@ -107,6 +108,7 @@ const InitializeProjectsSection = () => {
       github: "https://github.com/Muhammed-Rajab/shadespheare.lua",
       under_development: true,
       new_project: true,
+      hidden: true,
     },
     {
       title: "fretty mercury",
@@ -288,9 +290,11 @@ const InitializeProjectsSection = () => {
    * HELPERS
    ********/
   function filterProjectsByCategory(projects, category) {
-    return category === "all"
-      ? projects
-      : projects.filter((project) => project.tags.includes(category));
+    return projects.filter(
+      (project) =>
+        (category === "all" || project.tags.includes(category)) &&
+        !project.hidden,
+    );
   }
 
   function paginate(projects, pageIndex, perPage) {
