@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+Hi, I&#39;m Rajab Kabeer. I&#39;m interested in electronics, systems programming, and...
+"
+    >
+
+    <title>
+About · rkb
+</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    
+  </head>
+  <body>
+    <header class="header">
+  <h1 class="brand-name">
+    <a href="/">RKb</a>
+  </h1>
+
+  <div class="clock">
+      <span class="flag">🇦🇹</span>
+      <span id="clock"></span>
+  </div>
+
+  <script type="module">
+    function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</header>
+
+    <nav>
+  <a 
+    href="/projects/"
+    
+    >/projects</a>
+
+  <a
+    href="/tools/"
+    
+    >/tools</a>
+
+  <a 
+    href="/lab/"
+    
+    >/lab</a>
+
+  <a 
+    href="/writings/"
+    
+    >/writings</a>
+
+  <a 
+    href="/now/"
+    
+    >/now</a>
+
+  <a 
+    href="/about/"
+    aria-current="page"
+    >/about</a>
+
+  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
+</nav>
+ 
+
+    <main>
+      
+
+<h1>About</h1>
+
+<p>Hi, I'm Rajab Kabeer.</p>
+
+<p>I'm interested in electronics, systems programming, and understanding how things work.</p>
+
+<p>I built this site as a long-term workshop to document projects, experiments, and things I learn along the way.</p>
+
+<p>Outside of programming, I'm currently learning German and preparing to move to Austria for my bachelor's degree.</p>
+
+<p>You can also find me on <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>.</p>
+
+<p>Questions, corrections, or just want to say hello? Feel free to <a href="mailto:rajabkabeer0@gmail.com">send me an email!</a></p>
+
+<p>
+This website is built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">Eleventy</a> using plain HTML, CSS, and JavaScript. It is designed to be fast, accessible, and functional even without JavaScript, except for interactive tools in <a href="/tools">/tools</a>.
+</p>
+
+<hr>
+
+
+    </main>
+
+    <footer  class="">
+  <p>© 2026 Rajab Kabeer</p>
+</footer>
+
+
+    
+
+  </body>
+</html>
+

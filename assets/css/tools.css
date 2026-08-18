@@ -1,0 +1,260 @@
+/*
+    Tool Styles
+
+    Wrap every tool in:
+
+        <section class="tool">
+
+    Layout helpers:
+
+        .row
+            Horizontal flex container.
+
+        .col
+            Vertical flex container.
+
+        .grow
+            Expands to fill available space.
+
+        .stack
+            Adds vertical spacing between direct children.
+
+        .inline
+            Inline flex container with wrapping.
+
+        .center
+            Centers children horizontally.
+
+        .right
+            Right-aligns children.
+
+    Utility classes:
+
+        .output
+            Styled container for generated output.
+
+        .muted
+            Secondary text.
+
+        .mono
+            Monospace text.
+
+        .full
+            Full-width element.
+
+        .hidden
+            Hides an element.
+*/
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Typography */
+
+.tool h1,
+.tool h2,
+.tool h3,
+.tool h4,
+.tool h5,
+.tool h6 {
+  margin: 0;
+}
+
+.tool p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tool ul,
+.tool ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.tool li + li {
+  margin-top: 0.35rem;
+}
+
+/* Labels */
+
+.tool label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+/* Inputs */
+
+.tool input,
+.tool textarea,
+.tool select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+
+  font: inherit;
+  color: inherit;
+  background: transparent;
+
+  border: 1px solid #bbb;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+}
+
+.tool textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+/* Buttons */
+
+.tool button {
+  padding: 0.65rem 1rem;
+
+  font: inherit;
+  color: inherit;
+
+  background: transparent;
+
+  border: 1px solid #bbb;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.tool button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tool button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Focus */
+
+.tool input:focus,
+.tool textarea:focus,
+.tool select:focus,
+.tool button:focus {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
+
+/* Output */
+
+.tool .output {
+  padding: 1rem;
+
+  border: 1px solid #bbb;
+  border-radius: 6px;
+
+  overflow-x: auto;
+}
+
+/* Tables */
+
+.tool table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tool th,
+.tool td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tool tbody tr:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Code */
+
+.tool code,
+.tool pre,
+.tool .mono {
+  font-family: monospace;
+}
+
+.tool pre {
+  padding: 1rem;
+
+  overflow-x: auto;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Images */
+
+.tool img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Horizontal rule */
+
+.tool hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Layout helpers */
+
+.tool .row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tool .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tool .inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tool .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tool .grow {
+  flex: 1;
+}
+
+.tool .stack > * + * {
+  margin-top: 1rem;
+}
+
+/* Utilities */
+
+.tool .muted {
+  color: #666;
+}
+
+.tool .full {
+  width: 100%;
+}
+
+.tool .hidden {
+  display: none;
+}

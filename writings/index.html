@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+Not a self-help guru, but from here you can learn a thing or two from my personal life experiences. Learnings, experiences, thoughts, opinions, and more.
+"
+    >
+
+    <title>
+Writings · rkb
+</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    
+  </head>
+  <body>
+    <header class="header">
+  <h1 class="brand-name">
+    <a href="/">RKb</a>
+  </h1>
+
+  <div class="clock">
+      <span class="flag">🇦🇹</span>
+      <span id="clock"></span>
+  </div>
+
+  <script type="module">
+    function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</header>
+
+    <nav>
+  <a 
+    href="/projects/"
+    
+    >/projects</a>
+
+  <a
+    href="/tools/"
+    
+    >/tools</a>
+
+  <a 
+    href="/lab/"
+    
+    >/lab</a>
+
+  <a 
+    href="/writings/"
+    aria-current="page"
+    >/writings</a>
+
+  <a 
+    href="/now/"
+    
+    >/now</a>
+
+  <a 
+    href="/about/"
+    
+    >/about</a>
+
+  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
+</nav>
+ 
+
+    <main>
+      
+
+
+<h1>Writings</h1>
+
+<p>Not a self-help guru, but from here you can learn a thing or two from my personal life experiences. Learnings, experiences, thoughts, opinions, and more.</p>
+
+
+
+
+
+
+<!-- year -->
+<h2>2026 (2)</h2>
+
+<!-- month -->
+
+
+<h4>July (2)</h4>
+
+<!-- link to note -->
+<ul>
+  
+  <li><a href="/writings/2026-07-18-words-are-complicated/">There&#39;s More to Words Than I thought.</a></li>
+  
+  <li><a href="/writings/2026-07-13-directions-in-german/">Directions in German are not as scary as you think they might be.</a></li>
+  
+</ul>
+
+
+
+
+
+<hr>
+
+
+    </main>
+
+    <footer  class="">
+  <p>© 2026 Rajab Kabeer</p>
+</footer>
+
+
+    
+
+  </body>
+</html>
+

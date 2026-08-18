@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+Understanding why AC coupling is necessary in a single-supply non-inverting amplifier.
+"
+    >
+
+    <title>
+Why single-supply op-amps need AC coupling · rkb
+</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/css/better-markdown.css">
+
+  </head>
+  <body>
+    <header class="header">
+  <h1 class="brand-name">
+    <a href="/">RKb</a>
+  </h1>
+
+  <div class="clock">
+      <span class="flag">🇦🇹</span>
+      <span id="clock"></span>
+  </div>
+
+  <script type="module">
+    function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</header>
+
+    <nav>
+  <a 
+    href="/projects/"
+    
+    >/projects</a>
+
+  <a
+    href="/tools/"
+    
+    >/tools</a>
+
+  <a 
+    href="/lab/"
+    aria-current="page"
+    >/lab</a>
+
+  <a 
+    href="/writings/"
+    
+    >/writings</a>
+
+  <a 
+    href="/now/"
+    
+    >/now</a>
+
+  <a 
+    href="/about/"
+    
+    >/about</a>
+
+  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
+</nav>
+ 
+
+    <main>
+      
+
+<article>
+  <!-- Header  -->
+  <header>
+    <h1>Why single-supply op-amps need AC coupling</h1>
+
+    <p>
+      <time datetime="2026-07-05">
+        <i>Sunday, July 5, 2026</i>
+      </time>
+    </p> 
+
+    
+    <ul class="tags">
+      
+        <!-- slugify later -->
+        <li>
+          <a href="/tags/opamp">opamp</a>
+        </li>
+      
+        <!-- slugify later -->
+        <li>
+          <a href="/tags/electronics">electronics</a>
+        </li>
+      
+        <!-- slugify later -->
+        <li>
+          <a href="/tags/analog">analog</a>
+        </li>
+      
+    </ul>
+    
+  </header>
+
+  <!-- Content -->
+  <p>While building a microphone preamplifier, I noticed that the output was clipping even at low input levels. The problem turned out not to be the gain but the input bias.</p>
+<hr>
+<h2>Problem</h2>
+<p>The circuit was powered from a single 5 V supply.</p>
+<p>My microphone output was centered around 0 V, but the non-inverting input of the op-amp needed to be biased around half the supply voltage.</p>
+<p>Without doing this, the amplifier could not reproduce the negative half of the waveform correctly.</p>
+<blockquote>
+<p>A single-supply op-amp still needs its input signal to remain within its common-mode input range.</p>
+</blockquote>
+<hr>
+<h2>Experiment</h2>
+<ol>
+<li>Connected the microphone directly.</li>
+<li>Measured the output.</li>
+<li>Observed clipping.</li>
+<li>Added a 10 µF coupling capacitor.</li>
+<li>Added a voltage divider to bias the input at 2.5 V.</li>
+</ol>
+<hr>
+<h2>Circuit</h2>
+<pre><code class="language-text">Mic
+ |
+ |---||----+------&gt; +IN
+     10µF  |
+            |
+           100k
+            |
+           2.5V
+</code></pre>
+<pre><code class="language-text">                      0 0  0 0 0  0 0 0 00 000 0000000      
+    000 0 00 0  0 0 0                                00     
+0000                                                  00    
+ 0                                                     00   
+ 0                                                      00  
+ 0                                                       0  0000000000000000000000000000
+  0     ─────────────────────►this is very easy imo      0  
+  0                                                      00 
+  0                                                       0 
+  0                                                       0 
+  0                                                       0 
+  000                                                      0
+0000                  ┌─────┐                              0
+0                  ───┤     ├──                            0
+0                  ───┤     ├──                            0
+0                  ───┤     │                              0
+0                  ───┤     │                              0
+0                     └─────┘                              0
+0                                                        000
+0                                                     000   
+00                                              000000      
+  00000 00 0 0 0 0000000000 0 00 0000 00000000000           
+</code></pre>
+<hr>
+<h2>Results</h2>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Output</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct input</td>
+<td>Clipped</td>
+<td>Negative half missing</td>
+</tr>
+<tr>
+<td>AC coupled</td>
+<td>Clean</td>
+<td>Signal centered correctly</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Code</h2>
+<pre><code class="language-c">float gain = 1.0 + (R2 / R1);
+</code></pre>
+<hr>
+<h2>Observations</h2>
+<ul>
+<li>The capacitor blocks DC.</li>
+<li>The voltage divider establishes the DC operating point.</li>
+<li>The amplified waveform is now centered around 2.5 V.</li>
+<li>The clipping disappeared completely.</li>
+</ul>
+<hr>
+<h2>Things to Remember</h2>
+<ul>
+<li>Every capacitor blocks <strong>changes in DC</strong>, not AC itself.</li>
+<li>Single-supply amplifiers usually need a bias voltage.</li>
+<li>Always check the op-amp's common-mode input range.</li>
+</ul>
+<hr>
+<h2>References</h2>
+<ul>
+<li>LM358 Datasheet</li>
+<li>Op-Amps for Everyone</li>
+</ul>
+
+</article>
+
+<hr>
+
+
+    </main>
+
+    <footer  class="">
+  <p>© 2026 Rajab Kabeer</p>
+</footer>
+
+
+    
+
+  </body>
+</html>
+

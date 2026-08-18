@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+A collection of software, electronics, and hardware projects I&#39;ve built. Each project documents the motivation, design decisions, implementation, and lessons learned.
+"
+    >
+
+    <title>
+Projects · rkb
+</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    
+  </head>
+  <body>
+    <header class="header">
+  <h1 class="brand-name">
+    <a href="/">RKb</a>
+  </h1>
+
+  <div class="clock">
+      <span class="flag">🇦🇹</span>
+      <span id="clock"></span>
+  </div>
+
+  <script type="module">
+    function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</header>
+
+    <nav>
+  <a 
+    href="/projects/"
+    aria-current="page"
+    >/projects</a>
+
+  <a
+    href="/tools/"
+    
+    >/tools</a>
+
+  <a 
+    href="/lab/"
+    
+    >/lab</a>
+
+  <a 
+    href="/writings/"
+    
+    >/writings</a>
+
+  <a 
+    href="/now/"
+    
+    >/now</a>
+
+  <a 
+    href="/about/"
+    
+    >/about</a>
+
+  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
+</nav>
+ 
+
+    <main>
+      
+
+
+<h1>Projects</h1>
+
+<p>A collection of software, electronics, and hardware projects I&#39;ve built. Each project documents the motivation, design decisions, implementation, and lessons learned.</p>
+
+
+
+
+
+
+  
+
+  <article>
+
+    <h2><a href="/projects/led-peak-meter/">LED Peak Meter</a></h2>
+
+    <p>A circuit that reacts to signals and show the peak voltage</p>
+
+    
+    <p class="muted">
+      Status: In Progress
+    </p>
+    
+    
+  </article>
+
+
+  <hr>
+
+  
+
+  <article>
+
+    <h2><a href="/projects/6502-emulator/">6502 Emulator</a></h2>
+
+    <p>A software implementation of the MOS 6502 microprocessor written in Rust.</p>
+
+    
+    <p class="muted">
+      Status: In Progress
+    </p>
+    
+    
+  </article>
+
+
+  <hr>
+
+  
+
+
+
+
+
+    </main>
+
+    <footer  class="">
+  <p>© 2026 Rajab Kabeer</p>
+</footer>
+
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+Projects, browser-based tools, lab notes, and writings by Rajab Kabeer.
+"
+    >
+
+    <title>
+Home · rkb
+</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    
+  </head>
+  <body>
+    <header class="header">
+  <h1 class="brand-name">
+    <a href="/">RKb</a>
+  </h1>
+
+  <div class="clock">
+      <span class="flag">🇦🇹</span>
+      <span id="clock"></span>
+  </div>
+
+  <script type="module">
+    function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</header>
+
+    <nav>
+  <a 
+    href="/projects/"
+    
+    >/projects</a>
+
+  <a
+    href="/tools/"
+    
+    >/tools</a>
+
+  <a 
+    href="/lab/"
+    
+    >/lab</a>
+
+  <a 
+    href="/writings/"
+    
+    >/writings</a>
+
+  <a 
+    href="/now/"
+    
+    >/now</a>
+
+  <a 
+    href="/about/"
+    
+    >/about</a>
+
+  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
+</nav>
+ 
+
+    <main>
+      
+
+
+<h1>Hello,</h1>
+
+<p>
+I'm <strong>Rajab Kabeer</strong>. I enjoy electronics, writing software, languages, and understanding how things work.
+</p>
+
+<p>
+Here you'll find my projects, browser-based tools, lab notes, and occasional writings on things I've learned, experienced or found worth thinking about.
+</p>
+
+<hr>
+
+<h2>Currently</h2>
+
+<ul>
+  <li>Debugging my 6502 emulator</li>
+  <li>Learning analog electronics</li>
+  <li>Building this website</li>
+</ul>
+
+<hr>
+
+<p>
+Everything on this site is hand-written and organized into projects, tools, and lab notes. Feel free to explore.
+</p>
+
+<p>
+Not sure where to begin? Explore <a href="/tools"><i>/tools</i></a>, a collection of small browser-based utilities I've built.
+</p>
+
+<hr>
+
+<p>Bored? Let's play snake!</p>
+
+<style>
+canvas {
+  border: 5px solid black;
+}
+</style>
+
+<div class="game">
+  <canvas id="canvas"></canvas>
+
+  <p>Press <code>S</code> to Start the Game.</p>
+  <p>Press <code>R</code> to Restart the Game.</p>
+  <p>Press <code>Esc</code> Toggle Pause.</p>
+</div>
+
+<script type="module" src="/assets/js/home.js"></script>
+
+<hr>
+
+<p>hi</p>
+
+
+    </main>
+
+    <footer  class="">
+  <p>© 2026 Rajab Kabeer</p>
+</footer>
+
+
+    
+
+  </body>
+</html>
+
