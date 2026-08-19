@@ -1,0 +1,18 @@
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="
+
+"> <title> North Star · rkb </title> <link rel="stylesheet" href="/assets/css/style.css"> <link rel="stylesheet" href="/assets/css/better-markdown.css"> </head> <body> <header class="header"> <h1 class="brand-name"> <a href="/">RKb</a> </h1> <div class="clock"> <span class="flag">🇦🇹</span> <span id="clock"></span> </div> <script type="module"> function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000); </script> </header> <nav> <a href="/projects/">/projects</a> <a href="/tools/">/tools</a> <a href="/lab/">/lab</a> <a href="/writings/" aria-current="page">/writings</a> <a href="/now/">/now</a> <a href="/about/">/about</a> <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a> </nav> <main> <article> <header> <h1>North Star</h1> <p> <time datetime="2026-01-12"> <i>Monday, January 12, 2026</i> </time> </p> <ul class="tags"> <li> <a href="/tags/poetry">poetry</a> </li> <li> <a href="/tags/christmas">christmas</a> </li> </ul> </header> <p>Many eyes fixed on the performers. <br>Many chose where to stay.</p> <p>Yet mine moved through the crowd,</p> <p>searching for the face <br>that once pointed me north.</p> </article> <hr> </main> <footer> <p>© 2026 Rajab Kabeer</p> </footer> </body> </html> 
