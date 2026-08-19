@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="
 Small browser-based utilities I built for myself.
-"
-    >
-
-    <title>
-Tools · rkb
-</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    
-  </head>
-  <body>
-    <header class="header">
-  <h1 class="brand-name">
-    <a href="/">RKb</a>
-  </h1>
-
-  <div class="clock">
-      <span class="flag">🇦🇹</span>
-      <span id="clock"></span>
-  </div>
-
-  <script type="module">
-    function updateClock() {
+"> <title> Tools · rkb </title> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <header class="header"> <h1 class="brand-name"> <a href="/">RKb</a> </h1> <div class="clock"> <span class="flag">🇦🇹</span> <span id="clock"></span> </div> <script type="module"> function updateClock() {
       const now = new Date();
 
       const vienna = now.toLocaleTimeString("en-GB", {
@@ -46,69 +15,4 @@ Tools · rkb
     }
 
     updateClock();
-    setInterval(updateClock, 1000);
-  </script>
-</header>
-
-    <nav>
-  <a 
-    href="/projects/"
-    
-    >/projects</a>
-
-  <a
-    href="/tools/"
-    aria-current="page"
-    >/tools</a>
-
-  <a 
-    href="/lab/"
-    
-    >/lab</a>
-
-  <a 
-    href="/writings/"
-    
-    >/writings</a>
-
-  <a 
-    href="/now/"
-    
-    >/now</a>
-
-  <a 
-    href="/about/"
-    
-    >/about</a>
-
-  <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a>
-</nav>
- 
-
-    <main>
-      
-
-<h1>Tools</h1>
-
-<p>Small browser-based utilities I built for myself.</p>
-
-<ul>
-  <li><a href="/tools/test-tool/">Test Tool</a></li>
-</ul>
-
-
-<hr>
-
-
-    </main>
-
-    <footer  class="">
-  <p>© 2026 Rajab Kabeer</p>
-</footer>
-
-
-    
-
-  </body>
-</html>
-
+    setInterval(updateClock, 1000); </script> </header> <nav> <a href="/projects/">/projects</a> <a href="/tools/" aria-current="page">/tools</a> <a href="/lab/">/lab</a> <a href="/writings/">/writings</a> <a href="/now/">/now</a> <a href="/about/">/about</a> <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a> </nav> <main> <h1>Tools</h1> <p>Small browser-based utilities I built for myself.</p> <ul> <li><a href="/tools/test-tool/">Test Tool</a></li> </ul> <hr> </main> <footer> <p>© 2026 Rajab Kabeer</p> </footer> </body> </html> 
