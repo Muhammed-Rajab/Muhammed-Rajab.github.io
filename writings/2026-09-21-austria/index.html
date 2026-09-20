@@ -1,0 +1,18 @@
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="
+
+"> <title> You met me at a very Austrian time in my life · rkb </title> <link rel="stylesheet" href="/assets/css/style.css"> <link rel="stylesheet" href="/assets/css/better-markdown.css"> </head> <body> <header class="header"> <h1 class="brand-name"> <a href="/">RKb</a> </h1> <div class="clock"> <span class="flag">🇦🇹</span> <span id="clock"></span> </div> <script type="module"> function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000); </script> </header> <nav> <a href="/writings/" aria-current="page">/writings</a> <a href="/projects/">/projects</a> <a href="/tools/">/tools</a> <a href="/lab/">/lab</a> <a href="/now/">/now</a> <a href="/about/">/about</a> <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a> </nav> <main> <article> <header> <h1>You met me at a very Austrian time in my life</h1> <p> <time datetime="2026-09-21"> <i>Monday, September 21, 2026</i> </time> </p> <ul class="tags"> <li> <a href="/tags/austria">austria</a> </li> </ul> </header> <p>On <strong>4. September 2026</strong>, I arrived in Austria with lots of dreams and a terrible stomach ache from eating horrendous airplane food. Although I faced a few issues with my accommodation at first, I'm more than happy to share that I'm loving this country so far. Coming from India, the standard of living here is, dare I say, top-notch. It saddens me that many people back home would call this a luxury, whereas it's rather common here.</p> <p>I made a few friends here, mostly malayalis (obviously), but I take every opportunity that I'm presented with to indulge myself in other cultures. It's been 17 days since I've arrived, and I feel like I've lived here most of my life.</p> <p>The harsh reality of Austrian winters has not struck me yet, and I'd rather leave some space for minor disappointments as days progress.</p> <p>I wish to write more often as I need an outlet to express myself and to reflect on myself, as I've felt like I lose a piece of myself whenever I move to a different community.</p> <p>Well, stay on the radar, my friend. If you are reading this and live in Austria, then send a mail. Let's get in touch :)</p> </article> <hr> </main> <footer> <p>© 2026 Rajab Kabeer</p> </footer> </body> </html> 
