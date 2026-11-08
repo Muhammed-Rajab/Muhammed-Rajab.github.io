@@ -1,0 +1,18 @@
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="
+
+"> <title> Der Winter kommt bald · rkb </title> <link rel="stylesheet" href="/assets/css/style.css"> <link rel="stylesheet" href="/assets/css/better-markdown.css"> </head> <body> <header class="header"> <h1 class="brand-name"> <a href="/">RKb</a> </h1> <div class="clock"> <span class="flag">🇦🇹</span> <span id="clock"></span> </div> <script type="module"> function updateClock() {
+      const now = new Date();
+
+      const vienna = now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/Vienna",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+      });
+
+      document.getElementById("clock").textContent = `CET ${vienna}`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000); </script> </header> <nav> <a href="/writings/" aria-current="page">/writings</a> <a href="/now/">/now</a> <a href="/about/">/about</a> <a href="https://github.com/Muhammed-Rajab" target="_blank" rel="noopener">/github</a> </nav> <main> <article> <header> <h1>Der Winter kommt bald</h1> <p> <time datetime="2026-11-08"> <i>Sunday, November 8, 2026</i> </time> </p> <ul class="tags"> <li> <a href="/tags/german">german</a> </li> <li> <a href="/tags/thoughts">thoughts</a> </li> </ul> </header> <p>Seit fast zwei Monaten wohne ich in Österreich, und größtenteils hat es mir Spaß gemacht. Ich bin in der ersten Septemberwoche hier angekommen, und das Wetter war, gelinde gesagt, wunderschön. Die Blumen blühten, überall war es grün, und die Sonne schien hell.</p> <p>Aber jetzt ist die Situation ganz anders. Alles sieht grau aus. Es ist kälter, ich kann nicht ohne Jacke nach draußen gehen, und mein Hals tut immer weh. Ich will einfach den ganzen Tag im Bett bleiben.</p> <p>Manchmal leide ich auch unter Traurigkeit. Ich bewege mich weniger und fühle mich deshalb immer müde. Die Sonne ist miestens nicht zu sehen, und mir fehlen die Sonnestrahlen auf meinem Gesicht.</p> <p>Als Einwanderer muss ich zuerst mit diesen unangenehmen Bedingungen klarkommen, um weiterzugehen. Ich habe das Gefuhl, dass dieser Winter eine große Lektion in meinem Leben sein wird, dass ich danach ein ganz neuer Mensch sein werde.</p> <p>Vielleicht macht das für dich keinen Sinn. Aber das is in Ordnung. Wir sehen uns nach dem Winter :)</p> </article> <hr> </main> <footer> <p>© 2026 Rajab Kabeer</p> </footer> </body> </html> 
